@@ -107,6 +107,10 @@ footer {
     background: rgba(255, 255, 255, 0.5);
     color: white;
 }
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-80%); } /* 80% to ensure smooth scrolling */
+}
 
 @media (max-width: 768px) {
     header, section, footer {
