@@ -15,6 +15,35 @@
     background-attachment: fixed;
 }
 
+        .gallery-container {
+    text-align: center;
+}
+
+.main-image img {
+    max-width: 80%;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.thumbnail:hover {
+    border-color: #007bff;
+}
 header {
     background: rgba(0, 0, 0, 0.695);
     color: white;
@@ -131,6 +160,23 @@ footer {
             <p>Use Of Productivity Tool google slide for project presentation ...</p>
         </div>
     </section>
+    <div class="gallery-container">
+        <div class="main-image">
+            <img id="mainImg" src="OIP(1).jpg" alt="Main Image">
+        </div>
+        <div class="thumbnail-container">
+            <img class="thumbnail" src="images1.jpeg" alt="Thumbnail 1" onclick="changeImage('image1.jpg')">
+            <img class="thumbnail" src="images2.jpg" alt="Thumbnail 2" onclick="changeImage('image2.jpg')">
+            <img class="thumbnail" src="IMG1.jpg" alt="Thumbnail 3" onclick="changeImage('image3.jpg')">
+            <img class="thumbnail" src="IMG2.jpg" alt="Thumbnail 4" onclick="changeImage('image4.jpg')">
+            <img class="thumbnail" src="pic1.PNG" alt="Thumbnail 5" onclick="changeImage('image5.jpg')">
+        </div>
+    </div>
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImg').src = src;
+        }
+    </script>
 
     <section class="contact">
         <h2>Contact</h2>
