@@ -89,9 +89,9 @@ function changeImage(src)
    document.getElementById('mainImg').src = src;
 }
 
-function changeContent(event) {
+function changeContent(section, event) {
     event.preventDefault(); // Prevent the default link behavior
-    function changeContent(section)
+   
     const container1 = document.getElementById('content-contain');
     const container2 = document.getElementById('content-container');
     
