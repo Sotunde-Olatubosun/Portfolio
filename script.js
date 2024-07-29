@@ -9,7 +9,7 @@ const content = {
                        <h3>Project Two</h3>
                        <p>Use Of Productivity Tool google slide for project presentation ...</p>
         <ul>
-            <li> <a href="https://github.com/Tshos2020/FCB-PROJECT-DOCUMENTATION"> Click Here to View Project Documentation on Github </a>
+            <li> <a href="https://github.com/Tshos2020/FCB-PROJECT-DOCUMENTATION"> Click to View Project Documentation on Github </a>
     </li>
         </ul>
     
