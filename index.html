@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Change</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('images2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main-image img {
+    max-width: 80%;
+    height: 120px;
+    transition: opacity 1s ease-in-out;
+     animation: scroll 10s linear infinite;
+}
+.cut{
+   font-family:'Times New Roman', serif;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.695);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+.header-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+section {
+    background: rgba(57, 52, 52, 0.9);
+    padding: 40px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.innn{
+
+    color: black;
+}
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+        .skills1 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills1 li {
+    background: purple;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.projects .project {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-80%); } /* 80% to ensure smooth scrolling */
+}
+
+@media (max-width: 768px) {
+    header, section, footer {
+        padding: 20px 10px;
+    }
+
+    .profile-picture {
+        width: 300px;
+        height: 200px;
+    }
+}     .hut{
+        width:30px;
+         height:30px;
+}
+
+.cert nav ul {
+    list-style: none;
+    padding: 0
+    
+    
+}
+
+.cert nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.cert nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.cert nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+a {
+    font-family: Brush Script MT , cursive;/* Replace with your chosen font */
+    font-size: 16px; /* Optional: adjust the font size */
+    text-decoration: none; /* Optional: remove underline */
+    color: white; /* Optional: change text color */
+}
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.thumbnail:hover {
+    border-color: #007bff;
+}
+
+#content-container {
+   
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="photo.png" alt="Profile Picture" class="profile-picture">
+            <h1>Olatubosun Sotunde</h1>
+            <p class="cut">IT Specialist</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Experienced IT Specialist with a strong background in network administration, cybersecurity, and software development.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <div class="innn">
+            <li>Network Administration</li>
+            <li>Cybersecurity</li>
+            <li>Software Development</li>
+            <li>Cloud Computing</li>
+            <li>Technical Support</li>
+            </div>
+            
+        </ul>
+    </section>
+
+   
+                <section class="skills1">
+                    
+                        <h2>Qualifications</h2>
+                
+                    <div class="cert"> 
+                        <nav>
+                           
+                               <ul>
+                                   <li><a href="#" onclick="changeContent('projects')">Projects</a></li>
+                                   <li><a href="#" onclick="changeContent('certificates')">Certificates</a></li>
+                               </ul>
+                          
+                               <div id="content-contain">
+                     <!-- Content will be updated here -->
+                               </div>
+     
+   
+</nav>
+</div>
+                </section>
+    </header>
+
+    <main>
+        <div id="content-container">
+            <!-- Content will be updated here -->
+        </div>
+    </main>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
