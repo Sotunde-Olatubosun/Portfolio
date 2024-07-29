@@ -90,7 +90,6 @@ function changeImage(src)
 }
 
 function changeContent(section) {
-    event.preventDefault(); // Prevent the default link behavior
    
     const container1 = document.getElementById('content-contain');
     const container2 = document.getElementById('content-container');
