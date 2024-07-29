@@ -45,11 +45,13 @@ const content = {
     certificates:{ 
         section1: `
         <h3>Certificate One</h3>
-                       <p>B.sc Computer Science</p>
+                       <p>B.sc Computer Science: BABCOCK UNIVERSITY</p>
                    </div>
                    <div class="project">
                        <h3>Certificate Two</h3>
-                       <p>CyberSecurity Certificate of Completion</p>
+                       <p>CyberSecurity Certificate of Completion: NEW HORIZON</p>
+       <h3>Certificate Three</h3>
+                       <p>Data Analysis Certificate of Completion: THE INCUBATOR</p>
        
     
     `,
